@@ -1,8 +1,102 @@
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@keyframes presentation-screen-label-1 {
+    from {
+        transform: translateY(40px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+@keyframes presentation-screen-label-2 {
+    from {
+        transform: translateY(-30px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+@keyframes presentation-screen-image {
+    from {
+        opacity: 0;
+        transform: translateX(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes right-to-left {
+    from {
+        opacity: 0;
+        transform: translateX(35px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: auto;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+.presentation-screen {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.presentation-screen-image {
+    max-width: 15%;
+    animation: presentation-screen-image ease 1.5s forwards;
+}
+
+.presentation-screen-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 0.75em;
+    text-transform: uppercase;
+}
+
+.presentation-screen-label-1 {
+    max-height: 1em;
+    overflow: hidden;
+}
+
+.presentation-screen-label-1 label {
+    display: block;
+    animation: presentation-screen-label-1 2s ease forwards;
+}
+
+.presentation-screen-label-2 {
+    max-height: 1em;
+    overflow: hidden;
+}
+
+.presentation-screen-label-2 label {
+    display: block;
+    animation: presentation-screen-label-2 2s ease forwards;
+}
+
+.presentation-screen-label-3 label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 2.5px;
+    margin: 0.5em 0;
+    animation: right-to-left 2.5s ease forwards;
 }
