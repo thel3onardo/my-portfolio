@@ -1,6 +1,6 @@
-import './style.css'
+const presentationScreen = document.querySelector(".presentation-screen");
+const portfolioContainer = document.querySelector(".portfolio-container");
 
-document.querySelector('#app').innerHTML = `
-  <h1>Hello Vite!</h1>
-  <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
-`
+setTimeout(function () {
+    portfolioContainer.style.height = "100vh";
+}, 2300);

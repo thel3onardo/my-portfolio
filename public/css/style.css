@@ -52,14 +52,23 @@ html {
 .presentation-screen {
     height: 100vh;
     width: 100vw;
+    background-color: #fff;
+    overflow: hidden;
+    transition: height 1s ease;
+}
+
+.presentation-screen-container {
     display: flex;
     justify-content: center;
     align-items: center;
     user-select: none;
+    height: 100%;
+    width: 100%;
 }
 
 .presentation-screen-image {
     max-width: 15%;
+    height: auto;
     animation: presentation-screen-image ease 1.5s forwards;
 }
 
@@ -70,6 +79,7 @@ html {
     font-weight: 700;
     line-height: 0.75em;
     text-transform: uppercase;
+    color: #212121;
 }
 
 .presentation-screen-label-1 {
@@ -99,4 +109,27 @@ html {
     letter-spacing: 2.5px;
     margin: 0.5em 0;
     animation: right-to-left 2.5s ease forwards;
+}
+
+.portfolio-container {
+    position: absolute;
+    top: 0;
+    background-color: #171717;
+    height: 0vh;
+    width: 100%;
+    transition: height 1.5s ease;
+}
+
+@media screen and (max-width: 599px) {
+    html {
+        font-size: 12px;
+    }
+
+    .presentation-screen-text {
+        line-height: 0.8em;
+    }
+
+    .presentation-screen-image {
+        max-width: 30%;
+    }
 }
