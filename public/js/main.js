@@ -3,4 +3,4 @@ const portfolioContainer = document.querySelector(".portfolio-container");
 
 setTimeout(function () {
     portfolioContainer.style.height = "100vh";
-}, 2300);
+}, 200); //2300
