@@ -49,6 +49,10 @@ html {
     font-family: "Lexend Deca", sans-serif;
 }
 
+body {
+    width: 100%;
+}
+
 .presentation-screen {
     height: 100vh;
     width: 100%;
@@ -124,7 +128,7 @@ html {
 /* header */
 .header {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     position: relative;
     z-index: 2;
 }
@@ -217,7 +221,7 @@ html {
     padding: 4em 0;
 }
 
-.aboutme-title {
+.sections-titles {
     color: #f9f9f9;
     font-size: 2.5rem;
     font-weight: 600;
@@ -227,12 +231,12 @@ html {
     width: 65%;
 }
 
-.aboutme-text {
+.sections-text {
     color: #828282;
     text-align: center;
     line-height: 1.5em;
-    margin-top: 1em;
     width: 100%;
+    padding: 2em 0;
 }
 
 .aboutme-text-anchor {
@@ -279,6 +283,87 @@ html {
     font-size: 1.5rem;
     font-weight: 600;
     width: 100%;
+}
+
+.projects-section-container {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3em 0;
+    /* border: 1px solid red; */
+}
+
+.projects-text-container {
+    width: 65%;
+    margin: 1em 0;
+}
+
+.projects-content-container {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    width: 30%;
+    margin: 0 2%;
+}
+
+.project-image-container {
+    width: 100%;
+    height: 50%;
+    border-radius: 5px;
+    /* filter: opacity(0.6); */
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+.project-image {
+    height: 100%;
+    transform: translateX(-40px);
+}
+
+.project-image-container:hover {
+    transform: translateY(-10px);
+}
+
+.project-name {
+    color: #f9f9f9;
+    padding: 0.75em 0;
+}
+
+.project-description {
+    color: #828282;
+    text-align: center;
+    padding: 0.25em 0;
+}
+
+.project-buttons {
+    margin: 2em 0;
+}
+
+.project-button-preview {
+    color: #171717;
+    background-color: #00df5e;
+    padding: 0.6em 1.8em;
+}
+
+.project-button-github {
+    color: #171717;
+    background: none;
+    border: 1px solid #828282;
+    color: #f9f9f9;
+    padding: 0.6em 1.8em;
 }
 
 /* .header-second-text-label-title {
