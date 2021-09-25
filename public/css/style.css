@@ -168,7 +168,7 @@ body {
     height: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 .header-second-text-container {
@@ -366,16 +366,111 @@ body {
     padding: 0.6em 1.8em;
 }
 
+.services-section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+    padding: 4em 0;
+}
+
+.service-item-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 225px;
+    width: 30%;
+    background-color: #212121;
+    border-bottom: 3px solid #00df5e;
+    border-radius: 5px;
+    padding: 2em;
+}
+
+.service-items-general-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.service-item-title-container {
+    width: 50%;
+    border: 1px solid red;
+}
+
+.service-item-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #828282;
+}
+
+.myskills-section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+.skills-items-container {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    max-width: 100%;
+}
+
+.skill-item {
+    height: 150px;
+    width: 150px;
+    background-color: #212121;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* .header-second-text-label-title {
     box-shadow: 1px 20px 0px 10px #00df5e;
 } */
 
-/* .header-second-image-container {
-    /* margin: 0 3em; 
-}*/
+.header-second-image-container {
+    margin: 0 3em;
+    width: 300px;
+    height: 400px;
+    position: relative;
+}
+
+.header-second-image-container:hover::before {
+    transform: translateX(-7.5px) translateY(5px);
+}
+
+.header-second-image-container:hover .header-second-image {
+    filter: grayscale(1);
+}
+
+.header-second-image-container::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #00df5e;
+    transform: translateX(-15px) translateY(10px);
+    transition: all 1.25s ease;
+}
 
 .header-second-image {
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+    transition: all 1.5s ease;
 }
 
 @media screen and (max-width: 599px) {
