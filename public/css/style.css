@@ -126,6 +126,32 @@ body {
     overflow: hidden;
 }
 
+/* scroll top icon */
+.scroll-top-icon-container {
+    position: fixed;
+    height: 40px;
+    width: 50px;
+    display: none;
+    justify-content: center;
+    background-color: #333333;
+    bottom: 3%;
+    right: 2%;
+    z-index: 3;
+    opacity: 1;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+.scroll-top-icon {
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.scroll-top-icon-container:hover {
+    transform: translateY(-5px);
+}
+
 /* header */
 .header {
     height: 100vh;
@@ -374,8 +400,8 @@ body {
     object-fit: cover;
     object-position: center;
     box-shadow: -5px -5px 70px rgba(0, 255, 255, 0.2);
-    transform: perspective(1000px) rotateY(13deg) rotateX(5deg) rotate(-2deg)
-        scaleY(0.9) scaleX(0.95) translate(3%) translateY(-3%);
+    transform: perspective(1000px) rotateY(13deg) rotateX(5deg) rotate(-2deg) scaleY(0.9)
+        scaleX(0.95) translate(3%) translateY(-3%);
     transition: transform 0.5s ease-out;
 }
 
@@ -386,18 +412,18 @@ body {
     object-position: center;
     box-shadow: -5px -5px 70px rgba(0, 255, 255, 0.2);
     transition: transform 0.5s ease-out;
-    transform: perspective(1000px) rotateY(-15deg) rotateX(5deg) rotate(-2deg)
-        scaleY(0.9) scaleX(0.95) translate(3%) translateY(-3%);
+    transform: perspective(1000px) rotateY(-15deg) rotateX(5deg) rotate(-2deg) scaleY(0.9)
+        scaleX(0.95) translate(3%) translateY(-3%);
 }
 
 .project-image-left:hover {
-    transform: perspective(0px) rotateY(0deg) rotateX(2deg) rotate(0deg)
-        scaleY(1) scaleX(1) translate(3%) translateY(0);
+    transform: perspective(0px) rotateY(0deg) rotateX(2deg) rotate(0deg) scaleY(1) scaleX(1)
+        translate(3%) translateY(0);
 }
 
 .project-image-right:hover {
-    transform: perspective(0px) rotateY(0deg) rotateX(2deg) rotate(0deg)
-        scaleY(1) scaleX(1) translate(3%) translateY(0);
+    transform: perspective(0px) rotateY(0deg) rotateX(2deg) rotate(0deg) scaleY(1) scaleX(1)
+        translate(3%) translateY(0);
 }
 
 .project-text-container {
@@ -521,6 +547,10 @@ body {
     position: relative;
     z-index: 2;
     transition: all 1.5s ease;
+}
+
+.hidden {
+    display: none;
 }
 
 @media screen and (max-width: 599px) {
