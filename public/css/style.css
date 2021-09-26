@@ -47,6 +47,7 @@
 html {
     width: auto;
     font-family: "Lexend Deca", sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -372,7 +373,7 @@ body {
     height: 100%;
     object-fit: cover;
     object-position: center;
-    box-shadow: -5px -5px 70px rgba(0, 255, 255, 0.3);
+    box-shadow: -5px -5px 70px rgba(0, 255, 255, 0.2);
     transform: perspective(1000px) rotateY(13deg) rotateX(5deg) rotate(-2deg)
         scaleY(0.9) scaleX(0.95) translate(3%) translateY(-3%);
     transition: transform 0.5s ease-out;
@@ -383,7 +384,7 @@ body {
     height: 100%;
     object-fit: cover;
     object-position: center;
-    box-shadow: -5px -5px 70px rgba(0, 255, 255, 0.3);
+    box-shadow: -5px -5px 70px rgba(0, 255, 255, 0.2);
     transition: transform 0.5s ease-out;
     transform: perspective(1000px) rotateY(-15deg) rotateX(5deg) rotate(-2deg)
         scaleY(0.9) scaleX(0.95) translate(3%) translateY(-3%);

@@ -4,11 +4,11 @@ const headerNavContainer = document.querySelector(".header-menu-container");
 
 setTimeout(function () {
     portfolioContainer.style.height = "100vh";
-}, 300); //2300
+}, 100); //2300
 
 setTimeout(function () {
     portfolioContainer.style.height = "auto";
-}, 400); //3800
+}, 200); //3800
 
 window.addEventListener("scroll", function () {
     console.log(headerNavContainer.offsetHeight);
