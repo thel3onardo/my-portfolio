@@ -34,7 +34,7 @@ function addListenersToServiceItems() {
     console.log(serviceItems);
     serviceItems.forEach((element, index) => {
         element.addEventListener("mouseover", function () {
-            // document.querySelector(".service-item-title").style.animation = "text-out .5s";
+            // document.querySelector(".service-item-title").style.animation = "text-out 1s";
             serviceItemTitle[index].style.display = "none";
             serviceItemTitle2[index].style.display = "block";
         });
