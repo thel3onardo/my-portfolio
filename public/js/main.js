@@ -45,3 +45,8 @@ function addListenersToServiceItems() {
         });
     });
 }
+
+document.querySelector(".contactme-submit").addEventListener("click", function (e) {
+    e.preventDefault();
+    sendEmail();
+});
