@@ -521,7 +521,7 @@ body {
 
 .service-item-title-2 {
     opacity: 1;
-    display: block;
+    display: none;
     transform: none;
     animation: text-out 0.5s;
     color: #f9f9f9;
