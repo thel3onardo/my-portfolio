@@ -18,11 +18,11 @@ document.addEventListener("scroll", function () {
 
 setTimeout(function () {
     portfolioContainer.style.height = "100vh";
-}, 100); //2300
+}, 2300); //2300
 
 setTimeout(function () {
     portfolioContainer.style.height = "auto";
-}, 200); //3800
+}, 3800); //3800
 
 window.addEventListener("scroll", function () {
     console.log(headerNavContainer.offsetHeight);
