@@ -420,7 +420,10 @@ body {
     box-shadow: -5px -5px 70px rgba(0, 255, 255, 0.2);
     transform: perspective(1000px) rotateY(13deg) rotateX(5deg) rotate(-2deg) scaleY(0.9)
         scaleX(0.95) translate(3%) translateY(-3%);
-    transition: transform 0.5s ease-out;
+    -webkit-transform: perspective(1000px) rotateY(13deg) rotateX(5deg) rotate(-2deg) scaleY(0.9)
+        scaleX(0.95) translate(3%) translateY(-3%);
+    transition: all 0.5s ease-out;
+    -webkit-transition: -webkit-transform 0.5s ease-out;
 }
 
 .project-image-right {
@@ -435,12 +438,12 @@ body {
 }
 
 .project-image-left:hover {
-    transform: perspective(0px) rotateY(0deg) rotateX(0deg) rotate(0deg) scaleY(1) scaleX(1)
+    transform: perspective(1000px) rotateY(0deg) rotateX(0deg) rotate(0deg) scaleY(1) scaleX(1)
         translate(0) translateY(0);
 }
 
 .project-image-right:hover {
-    transform: perspective(0px) rotateY(0deg) rotateX(2deg) rotate(0deg) scaleY(1) scaleX(1)
+    transform: perspective(1000px) rotateY(0deg) rotateX(2deg) rotate(0deg) scaleY(1) scaleX(1)
         translate(3%) translateY(0);
 }
 
